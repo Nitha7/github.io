@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of [Your Name]">
+    <title>[Nitha's] Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="mycss.css">
+
+<style>
+    .hero-section {
+       
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0fc9c3;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #4e9df2; /* Blue color for name */
+        margin-bottom: 0;
+    }
+
+    .hero-section h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #555;
+    }
+
+    /* Minimalistic images styling */
+    .hero-section img {
+        max-width: 150px; /* Size of the image */
+        border-radius: 10%; /* Circular image */
+        margin-top: 20px;
+    }
+
+    /* Simple divider */
+    .divider {
+        width: 300px;
+        height: 4px;
+        background-color: #007bff;
+        margin: 20px 0;
+    }
+
+    /* Button styling */
+    .hero-section .btn-primary {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        border-radius: 30px;
+    }
+    .image-container{
+        display: flex;
+        justify-content: center;
+    }
+    .image-container img{
+        max-width: 100%;
+    }
+</style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url(images/5747802.jpg); background-size: cover;">
+        
+        
+        <h1>Nitha Cherian</h1>
+        <div class="divider"></div>
+        <h2>Front-End Developer</h2>
+        
+        <!-- Optional: Add an image for a minimalistic profile look -->
+      <img src="photos/edited1.jpg" alt="Profile Image">  
+        
+        <!-- Call to Action Button (optional) -->
+        <a href="#projects" class="btn btn-primary">Portfolio</a>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Toggle Button with Hamburger Icon -->
+     
+    <button type="button" id="sidebarCollapse" class="btn btn-primary mb-4">
+        <i class="fas fa-bars"></i>
+    </button>
+
+
+    <!---<button type="button" id="sidebarCollapse" class="btn btn-primary mb-4">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <script>
+        // JavaScript to redirect to the portfolio page on button click
+        document.getElementById('sidebarCollapse').addEventListener('click', function() {
+            window.location.href = 'portfolio.html'; // Change this to the URL or page you want to navigate to
+        });
+    </script>---->
+
+
+    <!-- Sidebar (Initially Hidden) -->
+    <nav id="sidebar" class="bg-dark text-white p-3">
+        <h2 class="text-center">Menu</h2>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a href="about.html" class="nav-link text-white">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a href="project.html" class="nav-link text-white">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="skill.html" class="nav-link text-white">Skills</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="resume.html" class="nav-link text-white">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link text-white">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content" class="p-4 w-100">
+<!-- Welcome Message -->
+<section id="welcome" class="mb-5">
+    <h1 class="text-center">Welcome to My Portfolio!</h1>
+    <p class="welcome-message text-justify">
+        I'm thrilled to have you here! As a passionate front-end developer, 
+        I’ve created this space to showcase my journey, projects, skills, 
+        and the things I love doing. This portfolio reflects my commitment to 
+        design, functionality, and innovation. Whether you're here to learn
+         more about me or to explore the work I've done, I hope you find 
+         something that inspires you. Let's embark on this journey together, 
+         and I look forward to connecting with you!
+    </p>
+    <div class="image-container">
+        <!----
+        <img src="images/edited.png" alt="Edited Image" class="centered-image img-fluid">
+        ---->
+        <img src="images/Beige Minimalist Personal Business LinkedIn Banner.png">
+    </div>
+</section>
+
+        <!-- Add your page content here -->
+        
+       <section id="about">
+           <!-- <h2>About Me</h2>
+            <p>This is the about me section.</p> --->
+        </section>
+        
+        <section id="projects">
+           <!---- <h2>Projects</h2>
+            <p>This is the projects section.</p>--->
+        </section>
+
+        
+        <section id="resume">
+           <!---- <h2>Resume</h2>
+            <p>This is the resume section.</p>--->
+        </section>
+
+        <section id="contact">
+        <!--    <h2>Contact</h2>
+            <p>This is the contact section.</p>-->
+        </section> 
+    
+    </div>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Script to Toggle Sidebar -->
+    <script>
+        document.getElementById('sidebarCollapse').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
